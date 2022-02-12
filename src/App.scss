@@ -1,0 +1,64 @@
+@use './scss/variables' as v;
+@use './scss/mixins' as m;
+
+.App {
+  height: 100vh;
+  background-image: url('./assets/pens4.png');
+  background-position: center;
+  background-size:  contain;
+  // opacity: 0.3;
+}
+
+.App-header {
+  opacity: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.profile-photo {
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 2px v.$gray;
+}
+
+.cell {
+  // border: 2px solid red;
+  height: 31vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  border: 2px solid green;
+  border-radius: 50%;
+  padding: 2%;
+  margin: 0;
+}
+
+.top {
+  margin-top: 20%;
+}
+
+.bottom {
+  margin-bottom: 20%;
+}
+
+.left {
+  margin-left: 20%;
+}
+
+.right {
+  margin-right: 20%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+}
