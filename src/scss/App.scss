@@ -1,0 +1,97 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+.App {
+  border: 2px solid green;
+  height: 100vh;
+  background-image: url('../assets/pens4.png');
+  background-position: center;
+  background-size:  contain;
+  font-family: v.$font
+}
+
+.App-header {
+  opacity: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.profile-photo {
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 2px v.$gray;
+}
+
+.cell {
+  border: 2px solid red;
+  height: 31vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding: 8%;
+  margin: 0;
+}
+
+h1:hover {
+  cursor: pointer;
+  background-image: url('../assets/circle.png');
+  background-position: center;
+  background-size:  contain;
+  background-repeat: no-repeat;
+}
+
+// .top {
+//   margin-top: 20%;
+// }
+
+.bottom {
+  margin-bottom: 30%;
+}
+
+.left {
+  margin-left: 30%;
+}
+
+.right {
+  margin-right: 30%;
+}
+
+.top-center{
+  align-items: flex-end;
+}
+
+// .top, .top-center {
+//   height: 25vh;
+// }
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.my-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1%;
+  padding: 1%;
+}
+
+.my-links:hover {
+  background-color: v.$gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-link-img {
+  font-size: 2em;
+}
+
+h3 {
+  margin: 0;
+}

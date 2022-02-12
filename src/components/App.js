@@ -1,14 +1,21 @@
-import photo from './assets/photo.jpeg';
-import './App.scss';
+import photo from '../assets/photo.jpeg';
+import '../scss/App.scss';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { GrDocumentPdf } from 'react-icons/gr'
 
 function App() {
+  console.log("Hello, World! Welcome to my site.")
   return (
     <div className="App">
       <header className="App-header">
         <div className="cell">
           <h1 className="top left">My Story</h1>
+          {/*           <h3>pronunciations</h3>
+          <h3>translations</h3> */}
         </div>
-        <div className="cell"></div>
+        <div className="cell top-center">
+          <h2>Hello, World! I'm Anna Kummer (she/her)</h2>
+        </div>
         <div className="cell">
           <h1 className="top right">Projects</h1>
         </div>
@@ -19,13 +26,21 @@ function App() {
         <div className="cell"></div>
         <div className="cell">
           <h1 className="bottom left">Connect</h1>
+          {/* Email */}
         </div>
         <div className="cell info">
-          {/* <h3>Anna Kummer</h3>
-          <h3>she/her pronunciations</h3>
-          <h3>translations</h3>
-          <h3>GitHub, LinkedIn, Email, Resume</h3>
-          <h3>Something fun...</h3> */}
+          <div className="my-links">
+            <h3>Resume</h3>
+            <GrDocumentPdf  className='my-link-img'/>
+          </div>
+          <div className="my-links">
+            <h3>GitHub</h3>
+            <AiFillGithub  className='my-link-img'/>
+          </div>
+          <div className="my-links">
+            <h3>LinkedIn</h3>
+            <AiFillLinkedin  className='my-link-img'/>
+          </div>
         </div>
         <div className="cell">
           <h1 className="bottom right">Settings</h1>
