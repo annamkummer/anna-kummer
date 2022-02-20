@@ -1,0 +1,41 @@
+.sidebar {
+    position: fixed;
+    top: 5vh;
+    right: 0;
+    width: 12vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // border: 2px solid orange;
+}
+
+.center {
+    position: fixed;
+    top: 15vh;
+    left: 25vw;
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // border: 2px solid orange;
+}
+
+.center-home {
+    display: none;
+}
+
+.center-story, .center-settings {
+    position: relative;
+    top: 40%; 
+}
+
+.center-story {
+    left: 7%;
+}
+
+.center-settings {
+    right: 7%;
+}

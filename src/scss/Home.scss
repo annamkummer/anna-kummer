@@ -1,0 +1,23 @@
+.home {
+    // border: 2px solid red;
+    height: 100vh;
+    background-image: url('../assets/pens4.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.home-title {
+    // border: 2px solid green;
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    top: 60vh;
+}
+
+.amk {
+    width: 20vw;
+    border-radius: 50%;
+    position: fixed;
+    top: 30vh;
+    left: 40vw;
+}
