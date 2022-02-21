@@ -1,4 +1,8 @@
+@use './variables' as v;
+@use './mixins' as m;
+
 .sidebar {
+    z-index: 2;
     position: fixed;
     top: 5vh;
     right: 0;
@@ -12,11 +16,12 @@
 }
 
 .center {
+    z-index: 2;
     position: fixed;
-    top: 15vh;
-    left: 25vw;
-    width: 50vw;
-    height: 40vh;
+    top: 7vh;
+    left: 15vw;
+    width: 70vw;
+    height: 55vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;

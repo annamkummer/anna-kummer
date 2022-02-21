@@ -3,19 +3,13 @@
 
 .nav-btn {
     border: none;
-    // border: 1px solid red;
     border-radius: 50%;
-    background-color: v.$rose;
+    background-color: v.$plum;
     color: v.$white;
     font-family: v.$font;
     width: 8vw;
-    padding: 5%;
-}
-
-.nav-btn:hover {
-    cursor: pointer;
-    background-color: v.$aqua;
-    color: v.$black;
+    padding: 3%;
+    border: 5px solid v.$plum;
 }
 
 .nav-icon {
@@ -23,6 +17,14 @@
     margin-top: 1vw;
 }
 
+
 .nav-text {
     margin: 0% 0% 1vw 0%;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    color: v.$honey-yellow;
+    // border: 5px solid v.$honey-yellow;
+    // filter: drop-shadow(0px 0px 10px v.$honey-yellow);
 }

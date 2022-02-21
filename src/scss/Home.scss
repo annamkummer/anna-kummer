@@ -1,23 +1,88 @@
+@use './variables' as v;
+@use './mixins' as m;
+
 .home {
     // border: 2px solid red;
-    height: 100vh;
-    background-image: url('../assets/pens4.png');
+    height: 70vh;
+    width: 50vw;
+    position: fixed;
+    top: 5vh;
+    left: 25vw;
+    // background-image: url('../assets/shape.png');
+    // background-color: v.$honey-yellow;
+    border-radius: 25px;
+
+    z-index: 1;
+    // background-image: url('../assets/pens4.png');
     background-size: contain;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+}
+
+.home-name {
+    // border: 2px solid orange;
+    width: 20vw;
+    text-align: center;
+    position: fixed;
+    top: 55vh;
+    left: 35vw;
+    animation-name: slidein-name;
+    animation-duration: 3s;
 }
 
 .home-title {
     // border: 2px solid green;
-    width: 100vw;
+    width: 20vw;
     text-align: center;
     position: fixed;
     top: 60vh;
+    left: 45vw;
+    animation-name: slidein-title;
+    animation-duration: 3s;
 }
 
 .amk {
     width: 20vw;
     border-radius: 50%;
     position: fixed;
-    top: 30vh;
+    top: 27vh;
     left: 40vw;
+}
+
+.home-links {
+    // border: 2px solid green;
+    position: fixed;
+    top: 70vh;
+    left: 35vw;
+    width: 30vw;
+    height: 10vh;
+    display: flex; 
+    justify-content: center;
+}
+
+@keyframes slidein-name {
+    from {
+        position: fixed;
+        top: 55vh;
+        left: 100vw;
+    }
+
+    to {
+        position: fixed;
+        top: 55vh;
+        left: 35vw;
+    }
+}
+
+@keyframes slidein-title {
+    from {
+        position: fixed;
+        top: 60vh;
+        left: 0vw;
+    }
+
+    to {
+        position: fixed;
+        top: 60vh;
+        left: 45vw;
+    }
 }

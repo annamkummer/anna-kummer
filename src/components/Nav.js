@@ -1,4 +1,5 @@
 import '../scss/Nav.scss'
+import circle from '../assets/circle2.png'
 import { useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import NavBtn from './misc/NavBtn'
@@ -32,11 +33,21 @@ function Nav() {
 
     return (
         <nav className={navLocation}>
-            <NavLink to="/" className={`${navLocation}-home`}><NavBtn icon={icons[0]} text={views[0]} /></NavLink>
-            <NavLink to="/story" className={`${navLocation}-story`}><NavBtn icon={icons[1]} text={views[1]} /></NavLink>
-            <NavLink to="/portfolio" className={`${navLocation}-portfolio`}><NavBtn icon={icons[2]} text={views[2]} /></NavLink>
-            <NavLink to="/connect" className={`${navLocation}-connect`}><NavBtn icon={icons[3]} text={views[3]} /></NavLink>
-            <NavLink to="/settings" className={`${navLocation}-settings`}><NavBtn icon={icons[4]} text={views[4]} /></NavLink>
+            <NavLink to="/" className={`${navLocation}-home`}>
+                <NavBtn icon={icons[0]} text={views[0]} />
+            </NavLink>
+            <NavLink to="/story" className={`${navLocation}-story`}>
+                <NavBtn icon={icons[1]} text={views[1]} />
+            </NavLink>
+            <NavLink to="/portfolio" className={`${navLocation}-portfolio`}>
+                <NavBtn icon={icons[2]} text={views[2]} />
+            </NavLink>
+            <NavLink to="/connect" className={`${navLocation}-connect`}>
+                <NavBtn icon={icons[3]} text={views[3]} />
+            </NavLink>
+            <NavLink to="/settings" className={`${navLocation}-settings`}>
+                <NavBtn icon={icons[4]} text={views[4]} />
+            </NavLink>
         </nav>
     )
 }

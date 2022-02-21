@@ -1,0 +1,35 @@
+@use './variables' as v;
+@use './mixins' as m;
+
+.link {
+    border: none;
+    border-radius: 50%;
+    background-color: inherit;
+    color: v.$black;
+    font-family: v.$font;
+    width: 5vw;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.link-icon {
+    font-size: 3em;
+    color: v.$plum;
+}
+
+.link-icon:hover {
+    animation-name: rotation;
+    animation-duration: 1s;
+    font-size: 4em;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(45deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
