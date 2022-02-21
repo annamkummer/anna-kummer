@@ -1,7 +1,7 @@
 @use './variables' as v;
 @use './mixins' as m;
 
-.sidebar {
+.sidebar, .center {
     z-index: 2;
     position: fixed;
     top: 5vh;
@@ -15,32 +15,40 @@
     // border: 2px solid orange;
 }
 
-.center {
-    z-index: 2;
-    position: fixed;
-    top: 7vh;
-    left: 15vw;
-    width: 70vw;
-    height: 55vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    // border: 2px solid orange;
+.active {
+    cursor: default;
+    // border: 2px solid v.$honey-yellow;
+    // border-radius: 40%;
+    // background: v.$honey-yellow;
+    filter: drop-shadow(0px 0px 10px v.$honey-yellow);
 }
 
-.center-home {
-    display: none;
-}
+// .center {
+//     z-index: 2;
+//     position: fixed;
+//     top: 7vh;
+//     left: 15vw;
+//     width: 70vw;
+//     height: 55vh;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     // border: 2px solid orange;
+// }
 
-.center-story, .center-settings {
-    position: relative;
-    top: 40%; 
-}
+// .center-home {
+//     display: none;
+// }
 
-.center-story {
-    left: 7%;
-}
+// .center-story, .center-settings {
+//     position: relative;
+//     top: 40%; 
+// }
 
-.center-settings {
-    right: 7%;
-}
+// .center-story {
+//     left: 7%;
+// }
+
+// .center-settings {
+//     right: 7%;
+// }

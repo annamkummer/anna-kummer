@@ -27,6 +27,8 @@ function Home() {
         <div className="home">
             <h1 className="home-name">Anna Kummer</h1>
             <h1 className="home-title">Web Developer</h1>
+            {/* <div className="square"></div>
+            <div className="square2"></div> */}
             <img className="amk" src={photo} alt="Anna Kummer" />
             <section className="home-links">
                 {homeLinks}

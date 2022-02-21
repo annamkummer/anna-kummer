@@ -2,14 +2,18 @@
 @use './mixins' as m;
 
 .nav-btn {
+    // border: 5px solid v.$plum;
+    // border-radius: 50%;
+    background-color: inherit;
     border: none;
-    border-radius: 50%;
-    background-color: v.$plum;
+    background-image: url('../assets/shape.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
     color: v.$white;
     font-family: v.$font;
     width: 8vw;
-    padding: 3%;
-    border: 5px solid v.$plum;
+    padding: 5%;
 }
 
 .nav-icon {
@@ -24,7 +28,8 @@
 
 .nav-btn:hover {
     cursor: pointer;
-    color: v.$honey-yellow;
+    // color: v.$honey-yellow;
+    background-image: url('../assets/fox.png');
     // border: 5px solid v.$honey-yellow;
     // filter: drop-shadow(0px 0px 10px v.$honey-yellow);
 }
