@@ -1,16 +1,9 @@
 import '../scss/Nav.scss'
-import circle from '../assets/circle2.png'
-import { useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import NavBtn from './misc/NavBtn'
 import { GoHome, GoBook, GoFileCode, GoCommentDiscussion, GoGear } from 'react-icons/go'
-import { useEffect } from 'react'
 
 function Nav() {
-    
-    const location = useLocation().pathname
-
-    const [navLocation, setNavLocation] = useState('center')
 
     const views = [
         "Home", 
@@ -27,25 +20,21 @@ function Nav() {
         <GoGear className='nav-icon' />
     ]
 
-    useEffect(() => {
-        location === '/' ? setNavLocation('center') : setNavLocation('sidebar') 
-    }, [location])
-
     return (
-        <nav className={navLocation}>
-            <NavLink to="/" className={`${navLocation}-home`}>
+        <nav className='navbar'>
+            <NavLink to="/" className='navlink'>
                 <NavBtn icon={icons[0]} text={views[0]} />
             </NavLink>
-            <NavLink to="/story" className={`${navLocation}-story`}>
+            <NavLink to="/story" className='navlink'>
                 <NavBtn icon={icons[1]} text={views[1]} />
             </NavLink>
-            <NavLink to="/portfolio" className={`${navLocation}-portfolio`}>
+            <NavLink to="/portfolio" className='navlink'>
                 <NavBtn icon={icons[2]} text={views[2]} />
             </NavLink>
-            <NavLink to="/connect" className={`${navLocation}-connect`}>
+            <NavLink to="/connect" className='navlink'>
                 <NavBtn icon={icons[3]} text={views[3]} />
             </NavLink>
-            <NavLink to="/settings" className={`${navLocation}-settings`}>
+            <NavLink to="/settings" className='navlink'>
                 <NavBtn icon={icons[4]} text={views[4]} />
             </NavLink>
         </nav>

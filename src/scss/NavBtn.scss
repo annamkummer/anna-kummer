@@ -2,34 +2,27 @@
 @use './mixins' as m;
 
 .nav-btn {
-    // border: 5px solid v.$plum;
-    // border-radius: 50%;
     background-color: inherit;
     border: none;
-    background-image: url('../assets/shape.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    color: v.$white;
-    font-family: v.$font;
-    width: 8vw;
-    padding: 5%;
+    border-radius: inherit;
+    color: inherit;
+    font-family: inherit;
 }
 
 .nav-icon {
     font-size: 3em;
-    margin-top: 1vw;
+    // margin-top: 1vw;
 }
 
 
 .nav-text {
     margin: 0% 0% 1vw 0%;
+    text-decoration: none;
 }
 
 .nav-btn:hover {
     cursor: pointer;
     // color: v.$honey-yellow;
-    background-image: url('../assets/fox.png');
     // border: 5px solid v.$honey-yellow;
     // filter: drop-shadow(0px 0px 10px v.$honey-yellow);
 }
