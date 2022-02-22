@@ -1,12 +1,12 @@
 import '../../../src/scss/Link.scss'
 
-function Link( { icon, text } ) {
+
+function Link( { icon, text, link } ) {
 
     return (
-        <button className='link' title={text}>
-            {icon}
-            {/* <h3 className='link-text'>{text}</h3> */}
-        </button>
+        // <button className='link' title={text} onClick={}>
+        <a href = {link} className='link' title={text} target = "_blank" rel="noreferrer">{icon}</a>
+        // </button>
     )
 }
 

@@ -4,6 +4,7 @@ import Link from '../misc/Link.js'
 import { GoMarkGithub } from 'react-icons/go'
 import { BsLinkedin } from 'react-icons/bs'
 import { VscFilePdf } from 'react-icons/vsc'
+import pdf from '../../../src/assets/Anna_Kummer_Resume.pdf'
 
 function Home() {
 
@@ -19,8 +20,14 @@ function Home() {
         <BsLinkedin className="link-icon" />
     ]
 
+    const refs = [
+        'https://github.com/annamkummer',
+        pdf,
+        'https://www.linkedin.com/in/anna-m-kummer/'
+    ]
+
     const homeLinks = links.map((link, i) => {
-        return <Link icon={icons[i]} text={link} />
+        return <Link key={i} icon={icons[i]} text={link} link={refs[i]} />
     })
 
     return (
