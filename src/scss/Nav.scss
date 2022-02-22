@@ -30,6 +30,11 @@
     // border: 2px solid red;
 }
 
+.navlink:hover {
+    animation-name: spin;
+    animation-duration: 1.5s;
+}
+
 .active {
     background-color: inherit;
     border: 2px solid v.$light-gray;
@@ -41,4 +46,14 @@
     background-position: center;
     background-repeat: no-repeat;
     color: v.$plum;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg)
+    }
+
+    to {
+        transform: rotateY(360deg)
+    }
 }
