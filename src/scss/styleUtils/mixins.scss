@@ -1,0 +1,12 @@
+@mixin section {
+    border: 2px solid red;
+    height: 80vh;
+    // background-color: black;
+}
+
+@mixin section-background {
+    border: 2px solid green;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+}

@@ -1,0 +1,15 @@
+@use './styleUtils/variables' as v;
+@use './styleUtils/mixins' as m;
+
+.connect {
+  @include m.section-background;
+  background-color: v.$dark-violet;
+  opacity: 0.2;
+}
+
+#connect {
+  @include m.section;
+  background-image: url('../assets/circles.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,14 @@
+@use './styleUtils/variables' as v;
+@use './styleUtils/mixins' as m;
+
+.title {
+  @include m.section-background;
+  background-color: v.$dark-violet;
+}
+
+#title {
+  @include m.section;
+  background-image: url('../assets/keys.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
