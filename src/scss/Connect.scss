@@ -1,6 +1,6 @@
 @use './styleUtils/variables' as v;
 @use './styleUtils/mixins' as m;
 
-.App {
-
+.section {
+  @include m.section
 }
