@@ -2,5 +2,5 @@
 @use './styleUtils/mixins' as m;
 
 .App {
-    font-style: v.$font;
+    font-family: v.$font;
 }
