@@ -7,7 +7,6 @@
   opacity: 0.8;
   @include m.flex-column-center;
   color: v.$white;
-
 }
 
 #title {
@@ -18,62 +17,119 @@
 }
 
 .home-name {
-  // border: 2px solid orange;
   margin-top: 10%;
   font-size: 6em;
   font-weight: 600;
-
-  // animation-name: slidein-name;
-  // animation-duration: 3s;
-  // z-index: 2;
+  animation-name: slidein-name;
+  animation-duration: 2.5s;
 }
 
 .home-title {
-  // border: 2px solid green;
   margin-top: 2%;
   font-size: 4em;
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 2.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
 
-  // animation-name: slidein-title;
-  // animation-duration: 3s;
+.link {
+  @include m.flex-column-center;
+  justify-content: center;
+  width: 25%;
+  color: v.$white;
 }
 
 .prof-links {
-  @include m.flex-row-center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 25%;
   font-size: 3em;
   margin: 3%;
-  // border: 2px solid green;
+  opacity: 0;
+  animation-name: fadein;
+  animation-delay: 2.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .prof-link {
   margin: 0% 5%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.res {
   height: 70%;
+}
+
+.gh:hover {
+  animation-name: spin;
+  animation-duration: 1s;
+}
+
+.res:hover {
+  animation-name: flipY;
+  animation-duration: 1s;
+}
+
+.li:hover {
+  animation-name: flipX;
+  animation-duration: 1s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flipY {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes flipX {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slidein-name {
   from {
+      color: v.$dark-violet;
       position: fixed;
-      top: 10vh;
-      left: 100vw;
+      top: 80vh;
   }
 
   to {
+      color: v.$white;
       position: fixed;
-      top: 10vh;
-      left: 2vw;
-  }
-}
-
-@keyframes slidein-title {
-  from {
-      position: fixed;
-      top: 100vh;
-      left: 5vw;
-  }
-
-  to {
-      position: fixed;
-      top: 24vh;
-      left: 7vw;
-  }
+      top: 0vh;
+    }
 }
