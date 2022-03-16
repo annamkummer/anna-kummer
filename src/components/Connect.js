@@ -4,7 +4,7 @@ function Connect() {
   return (
     <section className="section" id="connect">
       <div className="connect">
-        <p>Connect</p>
+        <h3 className="section-header">Connect</h3>
       </div>
     </section>
   )

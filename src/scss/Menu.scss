@@ -9,9 +9,10 @@
     position: fixed;
     left: 93%;
     z-index: 1;
+
 }
 
-.hamburger, .scroll-arrow {
+.hamburger {
     @include m.flex-column-center;
     justify-content: center;
     border: none;
@@ -29,7 +30,7 @@
     margin: 5%;
     width: 32px;
     height: 3px;
-    background-color: black;
+    background-color: v.$dark-violet;
 }
 
 // Open menu: Hamburger -> X 
@@ -203,7 +204,7 @@
 
 .title-link, .story-link, .portfolio-link, .connect-link {
     margin:10%;
-    color: black;
+    color: v.$dark-violet;
     text-decoration: none;
     display: flex;
     flex-direction: column;

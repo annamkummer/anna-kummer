@@ -6,6 +6,7 @@ import ProjectDetails from './ProjectDetails'
 function App() {
   return (
     <div className="App">
+      {console.log("Hello, world! Welcome!")}
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/:project' element={<ProjectDetails />} />
