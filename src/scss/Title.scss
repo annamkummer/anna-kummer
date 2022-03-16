@@ -4,6 +4,10 @@
 .title {
   @include m.section-background;
   background-color: v.$dark-violet;
+  opacity: 0.8;
+  @include m.flex-column-center;
+  color: v.$white;
+
 }
 
 #title {
@@ -11,4 +15,65 @@
   background-image: url('../assets/keys.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.home-name {
+  // border: 2px solid orange;
+  margin-top: 10%;
+  font-size: 6em;
+  font-weight: 600;
+
+  // animation-name: slidein-name;
+  // animation-duration: 3s;
+  // z-index: 2;
+}
+
+.home-title {
+  // border: 2px solid green;
+  margin-top: 2%;
+  font-size: 4em;
+
+  // animation-name: slidein-title;
+  // animation-duration: 3s;
+}
+
+.prof-links {
+  @include m.flex-row-center;
+  width: 25%;
+  font-size: 3em;
+  margin: 3%;
+  // border: 2px solid green;
+}
+
+.prof-link {
+  margin: 0% 5%;
+  height: 70%;
+}
+
+@keyframes slidein-name {
+  from {
+      position: fixed;
+      top: 10vh;
+      left: 100vw;
+  }
+
+  to {
+      position: fixed;
+      top: 10vh;
+      left: 2vw;
+  }
+}
+
+@keyframes slidein-title {
+  from {
+      position: fixed;
+      top: 100vh;
+      left: 5vw;
+  }
+
+  to {
+      position: fixed;
+      top: 24vh;
+      left: 7vw;
+  }
 }

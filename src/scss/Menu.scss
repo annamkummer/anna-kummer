@@ -3,17 +3,17 @@
 
 .menu {
     // border: 2px solid green;
+    @include m.flex-column-center;
     height: 85vh;
     width: 7vw;
     position: fixed;
     left: 93%;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .hamburger, .scroll-arrow {
+    @include m.flex-column-center;
+    justify-content: center;
     border: none;
     background-color: white;
     padding: 0;
@@ -23,10 +23,6 @@
     z-index: 1000;
     cursor: pointer;
     border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .line {
