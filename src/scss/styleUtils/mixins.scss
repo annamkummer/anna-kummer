@@ -19,3 +19,8 @@
     justify-content: center;
 }
 
+@mixin heading {
+    padding-top: 2%;
+    height: 16vh;
+    font-size: 4em;
+}

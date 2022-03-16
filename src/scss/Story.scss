@@ -4,3 +4,43 @@
 .section {
   @include m.section
 }
+
+#story {
+  @include m.flex-column-center;
+  border: 5px dotted v.$dark-violet;
+  color: v.$dark-violet;
+}
+
+.section-header {
+  @include m.flex-row-center;
+  @include m.heading;
+}
+
+.par {
+  // border: 2px solid orange;
+  width: 75%;
+  height: 35%;
+  display: flex;
+
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 100%;
+  margin-right: 3%;
+}
+
+.par-text {
+  margin-top: 3%;
+}
+
+.p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.ipa {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
