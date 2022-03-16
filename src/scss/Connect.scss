@@ -3,8 +3,8 @@
 
 .connect {
   @include m.section-background;
-  background-color: v.$dark-violet;
-  opacity: 0.2;
+  @include m.flex-column-center;
+  color: v.$white;
 }
 
 #connect {
@@ -12,4 +12,19 @@
   background-image: url('../assets/circles.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.connect-par {
+  @include m.flex-column-center;
+}
+
+.connect-p {
+  margin: 2%;
+  text-align: center;
+  font-size: 2em; 
+}
+
+.inline-li {
+  margin: 0% 1%;
+  color: v.$white;
 }
