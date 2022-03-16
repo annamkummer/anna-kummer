@@ -1,6 +1,7 @@
 import '../scss/Menu.scss';
 import { useState } from 'react'
-import { GoHome, GoBook, GoFileCode, GoCommentDiscussion, GoGear } from 'react-icons/go'
+import { GoHome, GoBook, GoFileCode, GoCommentDiscussion } from 'react-icons/go'
+import { RiSettings4Line } from 'react-icons/ri'
 
 function Menu() {
 
@@ -8,6 +9,10 @@ function Menu() {
   const toggleMenu = (e) => {
       e.preventDefault()
       setShowMenu(!showMenu)
+  }
+
+  const pulseSettings = () => {
+    console.log("pulsing")
   }
 
   return (
@@ -23,6 +28,7 @@ function Menu() {
           <a className="story-link" href="#story"><GoBook className='nav-icon' /> My Story</a>
           <a className="portfolio-link" href="#portfolio"><GoFileCode className='nav-icon' /> Portfolio</a>
           <a className="connect-link" href="#connect"> <GoCommentDiscussion className='nav-icon' /> Connect</a>
+          <a className="settings-link" href="#connect" onClick={pulseSettings}> <RiSettings4Line className='nav-icon' /> Settings</a>
         </div>
     </nav>
   )
