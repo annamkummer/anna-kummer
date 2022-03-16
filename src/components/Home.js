@@ -8,7 +8,7 @@ import Footer from './Footer'
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home" id="home">
         <Menu />
         <Title />
         <Story />

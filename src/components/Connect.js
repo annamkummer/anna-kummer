@@ -2,7 +2,7 @@ import '../scss/Connect.scss';
 
 function Connect() {
   return (
-    <section className="section">
+    <section className="section" id="connect">
         <p>Connect</p>
     </section>
   )
