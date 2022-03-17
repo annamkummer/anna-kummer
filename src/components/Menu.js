@@ -17,7 +17,7 @@ function Menu() {
 
   return (
     <nav className="menu">
-        <button className="hamburger" onClick={(e) => toggleMenu(e)}>
+        <button aria-label="menu" className="menu-button" onClick={(e) => toggleMenu(e)}>
             <div className={`line show-a-${showMenu}`}></div>
             <div className={`line show-b-${showMenu}`}></div>
             <div className={`line show-c-${showMenu}`}></div>
