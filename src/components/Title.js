@@ -9,7 +9,10 @@ function Title() {
   return (
     <section className="section" id="title">
       <div className="title">
-        <h1 className="home-name">Anna Kummer</h1>
+        <div className="home-name">
+          <h1 className="home-first-name">Anna</h1>
+          <h1 className="home-last-name">Kummer</h1>
+        </div>
         <h2 className="home-title">Web Developer</h2>
         <div className="prof-links">
           <a href='https://github.com/annamkummer' 
