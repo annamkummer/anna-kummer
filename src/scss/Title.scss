@@ -17,10 +17,20 @@
 }
 
 .home-name {
+  @include m.flex-row-center;
   margin-top: 10%;
   font-size: 6em;
   font-weight: 600;
-  animation-name: slidein-name;
+}
+
+.home-first-name {
+  animation-name: slidein-first-name;
+  animation-duration: 2.5s;
+}
+
+.home-last-name {
+  margin-left: 3%;
+  animation-name: slidein-last-name;
   animation-duration: 2.5s;
 }
 
@@ -120,16 +130,30 @@
   }
 }
 
-@keyframes slidein-name {
+@keyframes slidein-first-name {
   from {
       color: v.$dark-violet;
-      position: fixed;
-      top: 80vh;
+      position: relative;
+      left: 200%;
   }
 
   to {
       color: v.$white;
-      position: fixed;
-      top: 0vh;
+      position: relative;
+      left: 0%;
+    }
+}
+
+@keyframes slidein-last-name {
+  from {
+      color: v.$dark-violet;
+      position: relative;
+      right: 200%;
+  }
+
+  to {
+      color: v.$white;
+      position: relative;
+      right: 0%;
     }
 }
