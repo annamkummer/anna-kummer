@@ -25,7 +25,7 @@ function Menu( { pulseSettings } ) {
           <a className="story-link" href="#story"><GoBook className='nav-icon' /> My Story</a>
           <a className="portfolio-link" href="#portfolio"><GoFileCode className='nav-icon' /> Portfolio</a>
           <a className="connect-link" href="#connect"> <GoCommentDiscussion className='nav-icon' /> Connect</a>
-          <a className="settings-link" href="#connect" onClick={pulseSettings}> <RiSettings4Line className='nav-icon' /> Settings</a>
+          <a className="settings-link" href="#connect" onClick={pulseSettings}> <RiSettings4Line className='nav-icon' /> Font Setting</a>
         </div>
     </nav>
   )

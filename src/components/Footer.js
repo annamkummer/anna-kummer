@@ -8,13 +8,12 @@ function Footer( { pulse, dyslexiaMode } ) {
     <footer className="footer">
       <div className="settings">
         <div className={`settings-label dyslexia-friendly-true` }>
-          <h3>Settings: </h3>
+          <h3>Font Setting: </h3>
           <HiArrowRight className={`pulse-${pulse} arrow-1`}/> 
           <HiArrowRight className={`pulse-${pulse} arrow-2`}/> 
           <HiArrowRight className={`pulse-${pulse} arrow-3`}/> 
         </div>
         <Toggle label="Dyslexia-friendly mode" onClick={dyslexiaMode} />
-        <Toggle label="Colorblind-friendly mode" onClick={console.log('toggle color')} />
       </div>
         <div className="img-credits">
           <p className="credit">Keyboard Photo by 
