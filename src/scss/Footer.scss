@@ -18,6 +18,7 @@
     color: v.$white;
     padding: 1%;
     border-radius: 10px;
+    text-align: right;
 }
 
 .ref {
@@ -29,22 +30,26 @@
     text-align: right;
 }
 
+.arrow-1, .arrow-2, .arrow-3 {
+    margin: 0% 0% 0% 16%;
+}
+
 .pulse-true {
     animation-name: pulse;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-iteration-count: 2;
 }
 
 @keyframes pulse {
     from {
-        font-size: 1em;
+        transform: translate(0px);
     }
 
     50% {
-        font-size: 1.25em;
+        transform: translate(15px);
     }
 
     to {
-        font-size: 1em;
+        transform: translate(0px);
     }
 }

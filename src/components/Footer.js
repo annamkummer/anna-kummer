@@ -1,12 +1,18 @@
 import '../scss/Footer.scss';
 import Toggle from './Toggle'
+import { HiArrowRight } from 'react-icons/hi'
 
 function Footer( { pulse, dyslexiaMode } ) {
 
   return (
     <footer className="footer">
       <div className="settings">
-        <h3 className={`settings-label pulse-${pulse} dyslexia-friendly-true` }>Settings: </h3>
+        <div className={`settings-label dyslexia-friendly-true` }>
+          <h3>Settings: </h3>
+          <HiArrowRight className={`pulse-${pulse} arrow-1`}/> 
+          <HiArrowRight className={`pulse-${pulse} arrow-2`}/> 
+          <HiArrowRight className={`pulse-${pulse} arrow-3`}/> 
+        </div>
         <Toggle label="Dyslexia-friendly mode" onClick={dyslexiaMode} />
         <Toggle label="Colorblind-friendly mode" onClick={console.log('toggle color')} />
       </div>
