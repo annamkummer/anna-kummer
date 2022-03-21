@@ -1,6 +1,14 @@
 @use './styleUtils/variables' as v;
 @use './styleUtils/mixins' as m;
 
-.App {
+.app {
     font-family: v.$font;
+}
+
+.dyslexia-friendly-true {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.35ch;
+    word-spacing: 1.225ch; /* 3.5x letter-spacing */
+    font-variant-ligatures: none; /* explicitly disable ligatures */
+    font-weight: 400;
 }

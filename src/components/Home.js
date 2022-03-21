@@ -5,16 +5,28 @@ import Story from './Story'
 import Portfolio from './Portfolio'
 import Connect from './Connect'
 import Footer from './Footer'
+import { useState } from 'react'
 
-function Home() {
+
+function Home( { dyslexiaMode } ) {
+
+  const [pulse, setPulse] = useState(false)
+
+  const pulseSettings = () => {
+    setPulse(true)
+
+    setTimeout(() => setPulse(false), 3000)
+
+  }
+
   return (
     <div className="home" id="home">
-        <Menu />
+        <Menu pulseSettings={pulseSettings}/>
         <Title />
         <Story />
         <Portfolio />
         <Connect />
-        <Footer />
+        <Footer pulse={pulse} dyslexiaMode={dyslexiaMode}/>
     </div>
   )
 }

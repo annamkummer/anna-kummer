@@ -1,9 +1,35 @@
 import '../scss/Footer.scss';
+import Toggle from './Toggle'
+import { HiArrowRight } from 'react-icons/hi'
 
-function Footer() {
+function Footer( { pulse, dyslexiaMode } ) {
+
   return (
     <footer className="footer">
-        <p>Footer</p>
+      <div className="settings">
+        <div className={`settings-label dyslexia-friendly-true` }>
+          <h3>Font Setting: </h3>
+          <HiArrowRight className={`pulse-${pulse} arrow-1`}/> 
+          <HiArrowRight className={`pulse-${pulse} arrow-2`}/> 
+          <HiArrowRight className={`pulse-${pulse} arrow-3`}/> 
+        </div>
+        <Toggle label="Dyslexia-friendly mode" onClick={dyslexiaMode} />
+      </div>
+        <div className="img-credits">
+          <p className="credit">Keyboard Photo by 
+            <a className="ref" href="https://unsplash.com/@skabrera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Sergi Kabrera
+            </a> on 
+            <a className="ref" href="https://unsplash.com/s/photos/keyboard?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </a>
+          </p>
+          <p className="credit">Pink Circles 
+            <a className="ref" href='https://www.freepik.com/vectors/background'>
+              Background vector created by Sketchepedia - www.freepik.com
+            </a>
+          </p>
+        </div>
     </footer>
   )
 }

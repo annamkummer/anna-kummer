@@ -4,3 +4,52 @@
 .footer {
     height: 20vh;
 }
+
+.settings {
+    height: 14vh;
+    @include m.flex-row-center;
+    align-items: center;
+    font-size: 2em;
+    font-weight:600;
+}
+
+.settings-label {
+    background-color: v.$dark-violet;
+    color: v.$white;
+    padding: 1%;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.ref {
+    margin: 0% 0.5%; 
+}
+
+.credit {
+    width: 100%;
+    text-align: right;
+}
+
+.arrow-1, .arrow-2, .arrow-3 {
+    margin: 0% 0% 0% 16%;
+}
+
+.pulse-true {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+}
+
+@keyframes pulse {
+    from {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(15px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}

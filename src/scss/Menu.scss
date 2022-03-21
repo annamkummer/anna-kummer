@@ -12,7 +12,7 @@
 
 }
 
-.hamburger {
+.menu-button {
     @include m.flex-column-center;
     justify-content: center;
     border: none;
@@ -202,13 +202,13 @@
     top: 12%;
 }
 
-.title-link, .story-link, .portfolio-link, .connect-link {
+.title-link, .story-link, .portfolio-link, .connect-link, .settings-link {
     margin:10%;
     color: v.$dark-violet;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include m.flex-column-center;
+    justify-content: center;
+    text-align: center;
 }
 
 .nav-icon {
