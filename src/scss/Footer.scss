@@ -5,6 +5,21 @@
     height: 20vh;
 }
 
+.settings {
+    height: 14vh;
+    @include m.flex-row-center;
+    align-items: center;
+    font-size: 2em;
+    font-weight:600;
+}
+
+.settings-label {
+    background-color: v.$dark-violet;
+    color: v.$white;
+    padding: 1%;
+    border-radius: 10px;
+}
+
 .ref {
     margin: 0% 0.5%; 
 }
@@ -12,4 +27,24 @@
 .credit {
     width: 100%;
     text-align: right;
+}
+
+.pulse-true {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+}
+
+@keyframes pulse {
+    from {
+        font-size: 1em;
+    }
+
+    50% {
+        font-size: 1.25em;
+    }
+
+    to {
+        font-size: 1em;
+    }
 }

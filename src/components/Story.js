@@ -5,7 +5,7 @@ function Story() {
   return (
     <section className="section" id="story">
         <h3 className="section-header">My Story</h3>
-        <div className="par">
+        <div className="par-1">
           <img className="profile-pic" src={pic} alt="Anna Kummer" />
           <div className="par-text">
             <p className="p">Hello, world! Welcome to my site. I'm Anna (<span className="ipa">/ ˈænə /</span>).</p>
@@ -16,16 +16,16 @@ function Story() {
               languages, and most recently worked in the life sciences translation industry. I've collaborated
               with diverse teams from around the world, lead complex projects with multiple stakeholders 
               and many moving parts, and mentored junior colleagues.</p>
+          </div>
+        </div>
+        <div className="par-2">
+          <div className="par-text">
             <p className="p">I was drawn to software development in part by my love of lifelong learning and 
               desire to be a part of building the tools of the future, and in part by the knowledge that the 
               tech industry needs my unique voice. As a strong believer in the value of diverse perspectives, 
               I hope to build my software career around promoting diversity both in my workplace and for my 
               users.
             </p>
-          </div>
-        </div>
-        <div className="par">
-          <div className="par-text">
             <p className="p">When I'm not coding, I enjoy hiking Colorado's beautiful trails,
               playing viola in the Boulder Symphony, and curling up with my cat and 
               a good book.

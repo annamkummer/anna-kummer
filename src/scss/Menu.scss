@@ -206,9 +206,9 @@
     margin:10%;
     color: v.$dark-violet;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include m.flex-column-center;
+    justify-content: center;
+    text-align: center;
 }
 
 .nav-icon {

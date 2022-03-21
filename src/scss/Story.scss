@@ -16,18 +16,32 @@
   @include m.heading;
 }
 
-.par {
+.par-1, .par-2 {
   // border: 2px solid orange;
-  width: 75%;
-  height: 35%;
+  width: 95%;
   display: flex;
+  line-height: 1.45;
+}
 
+.par-1 {
+  height: 30%;
+}
+
+.par-2 {
+  height: 40%;
 }
 
 .profile-pic {
   border-radius: 50%;
   height: 100%;
+}
+
+.profile-pic {
   margin-right: 3%;
+}
+
+.grad-pic {
+  margin-left: 3%;
 }
 
 .par-text {

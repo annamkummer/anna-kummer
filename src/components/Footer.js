@@ -1,11 +1,15 @@
 import '../scss/Footer.scss';
+import Toggle from './Toggle'
 
-function Footer() {
+function Footer( { pulse, dyslexiaMode } ) {
+
   return (
     <footer className="footer">
-        <h3>Settings: </h3>
-        <p>toggle font</p>
-        <p>toggle color</p>
+      <div className="settings">
+        <h3 className={`settings-label pulse-${pulse} dyslexia-friendly-true` }>Settings: </h3>
+        <Toggle label="Dyslexia-friendly mode" onClick={dyslexiaMode} />
+        <Toggle label="Colorblind-friendly mode" onClick={console.log('toggle color')} />
+      </div>
         <div className="img-credits">
           <p className="credit">Keyboard Photo by 
             <a className="ref" href="https://unsplash.com/@skabrera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">

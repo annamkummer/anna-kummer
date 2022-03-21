@@ -3,16 +3,13 @@ import { useState } from 'react'
 import { GoHome, GoBook, GoFileCode, GoCommentDiscussion } from 'react-icons/go'
 import { RiSettings4Line } from 'react-icons/ri'
 
-function Menu() {
+function Menu( { pulseSettings } ) {
 
   const [showMenu, setShowMenu] = useState('')
+
   const toggleMenu = (e) => {
       e.preventDefault()
       setShowMenu(!showMenu)
-  }
-
-  const pulseSettings = () => {
-    console.log("pulsing")
   }
 
   return (
