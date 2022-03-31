@@ -1,0 +1,37 @@
+
+@use './styleUtils/variables' as v;
+@use './styleUtils/mixins' as m;
+
+.latitude-longitude-bingo {
+    background-color: #F9EAD7;
+}
+
+.travel-tracker {
+    background-color: purple;
+}
+
+.tic-tac-toe {
+    background-color: blue;
+}
+
+.fitlit {
+    background-color: green;
+}
+
+.project {
+    height: 76%;
+}
+// .key-photo {
+//     width: 50%;
+// }
+
+// .project {
+//     display: flex;
+//     justify-content: space-between;
+//     // background-color: v.$dark-violet;
+//     // opacity: 0.5;
+// }
+
+// .project:hover {
+//     border: 5px dotted v.$dark-violet;
+// }
