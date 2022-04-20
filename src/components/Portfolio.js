@@ -2,29 +2,36 @@ import '../scss/Portfolio.scss';
 import { projects } from '../projects.js'
 import Project from './Project'
 import { useState } from 'react'
+import TabContainer from './TabContainer'
 
 function Portfolio() {
 
-  const [selectedTab, setSelectedTab] = useState('latitude-longitude-bingo')
+  // const [selectedTab, setSelectedTab] = useState('latitude-longitude-bingo')
 
-  const selectTab = (selection) => {
-    setSelectedTab(selection)
-  }
+  // const selectTab = (selection) => {
+  //   setSelectedTab(selection)
+  // }
 
-  const projectWindows = projects.map((project, i) => {
-    return  <Project 
-              key={i}
-              photo={project.keyPhoto}
-              heading={project.heading}
-              title={project.title}
-              path={project.filePath}
-            />
+  // const projectWindows = projects.map((project, i) => {
+  //   return  <Project 
+  //             key={i}
+  //             photo={project.keyPhoto}
+  //             heading={project.heading}
+  //             title={project.title}
+  //             path={project.filePath}
+  //           />
+  // })
+
+  const projectTabs = projects.map((project, i) => {
+    return project.title
   })
 
   return (
     <section className="section" id="portfolio">
         <h3 className="section-header portfolio-header">Portfolio</h3>
-        <div className="tabs">
+        <TabContainer tabTitles={projectTabs}/>
+
+        {/* <div className="tabs">
           <button className="project-tab bingo" onClick={() => {selectTab('latitude-longitude-bingo')}}>
             Latitude-Longitude Bingo
           </button>
@@ -38,7 +45,7 @@ function Portfolio() {
             FitLit
           </button> 
         </div>
-        <Project selectedProject={selectedTab}/>
+        <Project selectedProject={selectedTab}/> */}
     </section>
   )
 }

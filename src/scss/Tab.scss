@@ -1,0 +1,124 @@
+@use './styleUtils/variables' as v;
+@use './styleUtils/mixins' as m;
+
+.tab {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.main-color {
+    border: none;
+    z-index: 10;   
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px; 
+}
+
+.main-color-first, .main-color-last {
+    background-color: v.$dark-violet;
+}
+
+.main-color-1 {
+    background-color: v.$project1;
+}
+
+.main-color-2 {
+    background-color: v.$project2;
+}
+
+.main-color-3 {
+    background-color: v.$project3;
+}
+
+.main-color-4 {
+    background-color: v.$project4;
+}
+
+.bottom-colors {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    transform: translate(0%, -99%);
+    display: flex;
+    z-index: -10;
+}
+
+.left-color, .right-color {
+    height: 100%;
+    width: 50%;
+}
+
+.left-color-1-true, .left-color-1-false {
+    background-color: v.$project1;
+}
+
+.left-color-first {
+    background-color: v.$dark-violet;
+}
+
+.left-color-last-true, .left-color-last-false {
+    background-color: v.$project4;
+}
+
+// .right-color-first-true, .right-color-first-false {
+//     background-color: v.$project1;
+// }
+
+.right-color-last-true, .right-color-last-false {
+    background-color: v.$dark-violet;
+}
+
+.right-color-4-true, .right-color-4-false {
+    background-color: v.$project4;
+}
+
+.right-color-1-true, .left-color-2-false {
+    background-color: v.$project1;
+}
+
+.right-color-1-false, .left-color-2-false {
+    background-color: v.$project1;
+}
+
+.right-color-1-false, .left-color-2-true {
+    background-color: v.$project2;
+}
+
+.right-color-2, .left-color-3 {
+    background-color: v.$project2;
+}
+
+.right-color-3-true, .left-color-4-false {
+    background-color: v.$project3;
+}
+
+.right-color-3-false, .left-color-4-false {
+    background-color: v.$project3;
+}
+
+.right-color-3-false, .left-color-4-true {
+    background-color: v.$project4;
+}
+
+// ===============================================================================
+
+// .main-color-1, .right-color-first-false, .left-color-1-true, .left-color-1-false, .right-color-1-true, .left-color-2-false  {
+//     background-color: v.$project1;
+// }
+
+// .main-color-2, .right-color-1-false, .left-color-2-true, .right-color-2-true, .left-color-3-false  {
+//     background-color: v.$project2;
+// }
+
+// .main-color-3, .right-color-2-false, .left-color-3-true, .right-color-3-true, .left-color-4-false  {
+//     background-color: v.$project3;
+// }
+
+// .main-color-4, .right-color-3-false, .left-color-4-true, .right-color-4-true, .left-color-last-false  {
+//     background-color: v.$project4;
+// }
+
+
+

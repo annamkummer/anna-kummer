@@ -1,0 +1,10 @@
+@use './styleUtils/variables' as v;
+@use './styleUtils/mixins' as m;
+
+.tab-container {
+    // border-top: 2px solid green;
+    height: 7vh;
+    background-color: v.$dark-violet;
+    display: flex; 
+    justify-content: space-between;
+}

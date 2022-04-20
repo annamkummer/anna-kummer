@@ -12,41 +12,41 @@
   height: 9vh;
 }
 
-.tabs {
-  height: 7vh;
-  background-color: v.$dark-violet;
-  @include m.flex-row-center;
-}
+// .tabs {
+//   height: 7vh;
+//   background-color: v.$dark-violet;
+//   @include m.flex-row-center;
+// }
 
-.project-tab {
-  border: none;
-  border-bottom: none;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  width: 20%;
-  background-color: v.$white;
-  color: v.$dark-violet;
-}
+// .project-tab {
+//   border: none;
+//   border-bottom: none;
+//   border-top-left-radius: 20px;
+//   border-top-right-radius: 20px;
+//   width: 20%;
+//   background-color: v.$white;
+//   color: v.$dark-violet;
+// }
 
-.project-container {
-  // border: 2px solid green;
-  height: 60.25vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+// .project-container {
+//   // border: 2px solid green;
+//   height: 60.25vh;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+// }
 
-.bingo {
-  background-color: #F9EAD7;
-}
+// .bingo {
+//   background-color: #F9EAD7;
+// }
 
-.travel{
-  background-color: purple;
-}
+// .travel{
+//   background-color: purple;
+// }
 
-.tic {
-  background-color: blue;
-}
+// .tic {
+//   background-color: blue;
+// }
 
-.fitlit {
-  background-color: green;
-}
+// .fitlit {
+//   background-color: green;
+// }
