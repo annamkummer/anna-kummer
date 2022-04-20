@@ -1,0 +1,57 @@
+@use './styleUtils/variables' as v;
+@use './styleUtils/mixins' as m;
+
+.tab {
+    // border: 3px solid orange;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.main-color {
+    border: none;
+    z-index: 10;   
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px; 
+}
+
+.main-color-0, .main-color-5 {
+    background-color: v.$dark-violet;
+}
+
+.main-color-1  {
+    background-color: v.$project1;
+}
+
+.main-color-2 {
+    background-color: v.$project2;
+}
+
+.main-color-3 {
+    background-color: v.$project3;
+}
+
+.main-color-4 {
+    background-color: v.$project4;
+}
+
+.bottom-colors {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    transform: translate(0%, -99%);
+    display: flex;
+    z-index: -10;
+}
+
+.left-color, .right-color {
+    height: 100%;
+    width: 50%;
+}
+
+
+
+
+
