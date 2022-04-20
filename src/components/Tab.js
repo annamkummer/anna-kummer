@@ -1,20 +1,23 @@
 import '../scss/Tab.scss';
-import { useState } from 'react'
 
-function Tab( { tabNumber, selectedTab } ) {
+function Tab( { tabNumber, selectedTab, selectTab } ) {
 
-  const [selected, setSelected] = useState(false)
+  console.log(selectedTab)
+  
+  let leftColor = (tabNumber === 0 || tabNumber === 1 || tabNumber <= selectedTab) ?
+                  tabNumber :
+                  tabNumber - 1
 
-    const setSelectedProject = () => {
-        console.log(tabNumber)
-    }
-
+  let rightColor = (tabNumber === 4 || tabNumber === 5 || tabNumber >= selectedTab) ?
+                  tabNumber :
+                  tabNumber + 1
+  
   return (
     <div className={`tab tab-${tabNumber}`}>
-        <button className={`main-color main-color-${tabNumber}`} onClick={setSelectedProject}></button>
-        <div className={`bottom-colors bottom-colors-${tabNumber}`}>
-            <div className={`left-color left-color-${tabNumber}-${selected}`}></div>
-            <div className={`right-color right-color-${tabNumber}-${selected}`}></div>
+        <button className={`main-color main-color-${tabNumber}`} value={tabNumber} onClick={(e) => selectTab(e)}></button>
+        <div className={`bottom-colors`}>
+            <div className={`left-color main-color-${leftColor}`}></div>
+            <div className={`right-color main-color-${rightColor}`}></div>
         </div>
     </div>
   )

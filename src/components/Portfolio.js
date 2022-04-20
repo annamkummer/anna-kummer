@@ -6,46 +6,17 @@ import TabContainer from './TabContainer'
 
 function Portfolio() {
 
-  // const [selectedTab, setSelectedTab] = useState('latitude-longitude-bingo')
-
-  // const selectTab = (selection) => {
-  //   setSelectedTab(selection)
-  // }
-
-  // const projectWindows = projects.map((project, i) => {
-  //   return  <Project 
-  //             key={i}
-  //             photo={project.keyPhoto}
-  //             heading={project.heading}
-  //             title={project.title}
-  //             path={project.filePath}
-  //           />
-  // })
-
   const projectTabs = projects.map((project, i) => {
     return project.title
   })
 
+  const [selectedTab, setSelectedTab] = useState(1)
+
   return (
     <section className="section" id="portfolio">
         <h3 className="section-header portfolio-header">Portfolio</h3>
-        <TabContainer tabTitles={projectTabs}/>
-
-        {/* <div className="tabs">
-          <button className="project-tab bingo" onClick={() => {selectTab('latitude-longitude-bingo')}}>
-            Latitude-Longitude Bingo
-          </button>
-          <button className="project-tab travel" onClick={() => {selectTab('travel-tracker')}}>
-            Travel Tracker
-          </button>
-          <button className="project-tab tic" onClick={() => {selectTab('tic-tac-toe')}}>
-            Tic-Tac-Toe
-          </button>
-          <button className="project-tab fitlit" onClick={() => {selectTab('fitlit')}}>
-            FitLit
-          </button> 
-        </div>
-        <Project selectedProject={selectedTab}/> */}
+        <TabContainer tabTitles={projectTabs} selectedTab={(tab) => setSelectedTab(tab)}/>
+        <Project selectedProject={projects[selectedTab - 1].filePath} />
     </section>
   )
 }

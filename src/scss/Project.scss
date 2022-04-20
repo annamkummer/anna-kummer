@@ -3,19 +3,19 @@
 @use './styleUtils/mixins' as m;
 
 .latitude-longitude-bingo {
-    background-color: #F9EAD7;
+    background-color: v.$project1;
 }
 
 .travel-tracker {
-    background-color: purple;
+    background-color: v.$project2;
 }
 
 .tic-tac-toe {
-    background-color: blue;
+    background-color: v.$project3;
 }
 
 .fitlit {
-    background-color: green;
+    background-color: v.$project4;
 }
 
 .project {
